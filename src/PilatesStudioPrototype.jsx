@@ -8,6 +8,8 @@ const BRAND = {
   instagram: "@pilateswithkashan",
 };
 
+const publicImage = (filename) => `${import.meta.env.BASE_URL}${filename}`;
+
 const navItems = [
   { label: "Offers", id: "offers" },
   { label: "About", id: "about" },
@@ -89,10 +91,10 @@ const classes = [
 ];
 
 const classImages = {
-  "Mat Pilates Flow": "/Image for 3rd border.png",
-  "Morning Mat Ritual": "/Image for 4th broder.png",
-  "Power Core Mat": "/Image for 5th border.png",
-  "Restore + Stretch": "/Picture for 7th border.png",
+  "Mat Pilates Flow": publicImage("Image for 3rd border.png"),
+  "Morning Mat Ritual": publicImage("Image for 4th broder.png"),
+  "Power Core Mat": publicImage("Image for 5th border.png"),
+  "Restore + Stretch": publicImage("Picture for 7th border.png"),
 };
 
 const plans = [
@@ -150,8 +152,8 @@ const blogPosts = [
 ];
 
 const blogImages = [
-  "/Image for 8th border.png",
-  "/Image for 9th border.png",
+  publicImage("Image for 8th border.png"),
+  publicImage("Image for 9th border.png"),
 ];
 
 const faqs = [
@@ -579,7 +581,7 @@ export default function PilatesStudioPrototype() {
             <div className="overflow-hidden rounded-t-[8rem] rounded-b-[2.5rem] border-[10px] border-[#7a4328] bg-[#7a4328] shadow-2xl shadow-[#4a2f1e]/20">
               <div className="relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-t-[6.5rem] rounded-b-[1.8rem] p-7 text-[#fff7ec]">
                 <img
-                  src="/Image for 1st border.png"
+                  src={publicImage("Image for 1st border.png")}
                   alt="Warm boutique Pilates studio interior"
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />
