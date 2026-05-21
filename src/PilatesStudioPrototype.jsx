@@ -8,9 +8,6 @@ const BRAND = {
   instagram: "@pilateswithkashan",
 };
 
-const HERO_IMAGE =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1086 1448'%3E%3Cdefs%3E%3ClinearGradient id='wall' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23d8b083'/%3E%3Cstop offset='.55' stop-color='%238d633f'/%3E%3Cstop offset='1' stop-color='%23351e12'/%3E%3C/linearGradient%3E%3CradialGradient id='light' cx='.78' cy='.2' r='.75'%3E%3Cstop stop-color='%23fff7e6' stop-opacity='1'/%3E%3Cstop offset='.4' stop-color='%23e2b77f' stop-opacity='.45'/%3E%3Cstop offset='1' stop-color='%23351e12' stop-opacity='0'/%3E%3C/radialGradient%3E%3Cfilter id='shadow'%3E%3CfeDropShadow dx='0' dy='18' stdDeviation='20' flood-color='%23200f08' flood-opacity='.35'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='1086' height='1448' fill='url(%23wall)'/%3E%3Crect width='1086' height='1448' fill='url(%23light)'/%3E%3Crect x='810' y='0' width='276' height='760' fill='%23faead0' opacity='.95'/%3E%3Crect x='890' y='20' width='125' height='720' fill='%23fff9ed' opacity='.78'/%3E%3Cg opacity='.36' stroke='%23cda879' stroke-width='8'%3E%3Cpath d='M915 0v760M955 0v760M995 0v760M1035 0v760'/%3E%3C/g%3E%3Cg filter='url(%23shadow)'%3E%3Cpath d='M640 910c-12-220-10-425 52-640' stroke='%23301c10' stroke-width='14' fill='none'/%3E%3Cg fill='none' stroke='%232f3d22' stroke-width='10' stroke-linecap='round'%3E%3Cpath d='M685 330c-82 30-142 92-182 186M700 350c76 34 128 94 160 180M665 460c-90 42-160 104-212 190M720 490c90 38 150 106 200 205M650 590c-75 35-130 88-170 158M735 610c76 34 135 88 180 160'/%3E%3C/g%3E%3Ccircle cx='665' cy='900' r='88' fill='%23776345'/%3E%3C/g%3E%3Crect x='0' y='825' width='610' height='38' fill='%23b07b4f'/%3E%3Crect x='74' y='735' width='96' height='96' rx='45' fill='%23513b2b'/%3E%3Cpath d='M0 740c80-70 145-75 230-25' stroke='%23d6b585' stroke-width='6' fill='none' opacity='.75'/%3E%3Cg filter='url(%23shadow)'%3E%3Crect x='-60' y='960' width='870' height='160' rx='35' fill='%232b1c13' opacity='.65'/%3E%3Crect x='250' y='900' width='500' height='88' rx='22' fill='%23b78555'/%3E%3Crect x='320' y='850' width='360' height='75' rx='18' fill='%2323150e' opacity='.75'/%3E%3Crect x='-20' y='1100' width='1060' height='185' rx='45' fill='%23b47b4d'/%3E%3Crect x='390' y='1040' width='570' height='120' rx='25' fill='%2323160f' opacity='.78'/%3E%3Cpath d='M40 1030h280M720 1000h300M510 930h430' stroke='%2323160f' stroke-width='12' opacity='.8'/%3E%3C/g%3E%3Crect width='1086' height='1448' fill='%23160f0b' opacity='.06'/%3E%3C/svg%3E";
-
 const navItems = [
   { label: "Offers", id: "offers" },
   { label: "About", id: "about" },
@@ -23,9 +20,9 @@ const navItems = [
 
 const offers = [
   {
-    title: "First Visit Ritual",
-    price: "£29",
-    detail: "Intro class + welcome consultation",
+    title: "First Mat Ritual",
+    price: "£19",
+    detail: "Intro mat class + welcome consultation",
     description:
       "A calm first session to understand your body, goals, and how you want Pilates to feel.",
     cta: "Claim intro offer",
@@ -33,15 +30,15 @@ const offers = [
   {
     title: "Glow Week Pass",
     price: "£55",
-    detail: "Unlimited classes for 7 days",
+    detail: "Unlimited mat classes for 7 days",
     description:
-      "Explore mat, reformer-inspired flow, stretch, and sculpt before choosing your next step.",
+      "Explore mat Pilates, stretch, sculpt, and restorative flow before choosing your next step.",
     cta: "Start glow week",
   },
   {
     title: "Private Alignment",
-    price: "£75",
-    detail: "One-to-one Pilates session",
+    price: "£45",
+    detail: "One-to-one mat Pilates session",
     description:
       "A personalised private session with calm pacing, tailored cues, and focused form correction.",
     cta: "Book private session",
@@ -50,12 +47,12 @@ const offers = [
 
 const classes = [
   {
-    title: "Reformer Flow",
+    title: "Mat Pilates Flow",
     level: "All levels",
     duration: "50 min",
     mood: "Sculpt",
     description:
-      "A graceful full-body session using resistance, breath, and control to build length and strength.",
+      "A graceful full-body mat session using breath, control, and precise movement to build length and strength.",
   },
   {
     title: "Morning Mat Ritual",
@@ -66,12 +63,12 @@ const classes = [
       "Slow, intentional mat Pilates designed to improve posture, mobility, and body awareness.",
   },
   {
-    title: "Power Core",
+    title: "Power Core Mat",
     level: "Intermediate",
     duration: "45 min",
     mood: "Energise",
     description:
-      "A focused core and glute class with tempo changes, deep holds, and precise alignment cues.",
+      "A focused mat-based core and glute class with tempo changes, deep holds, and precise alignment cues.",
   },
   {
     title: "Restore + Stretch",
@@ -79,9 +76,24 @@ const classes = [
     duration: "35 min",
     mood: "Recover",
     description:
-      "A soothing mobility-led class for hips, spine, shoulders, and nervous-system reset.",
+      "A soothing mobility-led mat class for hips, spine, shoulders, and nervous-system reset.",
+  },
+  {
+    title: "Reformer Pilates",
+    level: "Coming soon",
+    duration: "Launching soon",
+    mood: "Coming Soon",
+    description:
+      "Reformer Pilates is not available just yet, but it is planned for the next phase of the studio experience.",
   },
 ];
+
+const classImages = {
+  "Mat Pilates Flow": "/Image for 3rd border.png",
+  "Morning Mat Ritual": "/Image for 4th broder.png",
+  "Power Core Mat": "/Image for 5th border.png",
+  "Restore + Stretch": "/Picture for 7th border.png",
+};
 
 const plans = [
   {
@@ -90,7 +102,7 @@ const plans = [
     detail: "3 classes in 14 days",
     features: [
       "Perfect for first-timers",
-      "Mat or reformer-style access",
+      "Mat Pilates access",
       "Welcome consultation",
       "Form foundations",
     ],
@@ -98,7 +110,7 @@ const plans = [
   {
     name: "Studio Muse",
     price: "£129",
-    detail: "8 classes monthly",
+    detail: "8 mat classes monthly",
     features: [
       "Priority booking",
       "Monthly progress check",
@@ -110,9 +122,9 @@ const plans = [
   {
     name: "Unlimited Glow",
     price: "£189",
-    detail: "Unlimited monthly classes",
+    detail: "Unlimited monthly mat classes",
     features: [
-      "Unlimited classes",
+      "Unlimited mat classes",
       "Private class discounts",
       "Wellness event invites",
       "Priority waitlist access",
@@ -122,11 +134,11 @@ const plans = [
 
 const blogPosts = [
   {
-    title: "Why reformer Pilates feels different",
+    title: "Why mat Pilates is the perfect place to start",
     category: "Movement",
     readTime: "4 min read",
     excerpt:
-      "A simple guide to resistance, control, and why low-impact training can feel so powerful.",
+      "A simple guide to breath, control, alignment, and why low-impact mat training can feel so powerful.",
   },
   {
     title: "The beginner guide to your first class",
@@ -135,25 +147,23 @@ const blogPosts = [
     excerpt:
       "What to wear, what to expect, and how to feel comfortable stepping into your first Pilates session.",
   },
-  {
-    title: "How Pilates supports posture and calm",
-    category: "Wellbeing",
-    readTime: "3 min read",
-    excerpt:
-      "Explore the connection between breath, alignment, core strength, and a more grounded nervous system.",
-  },
+];
+
+const blogImages = [
+  "/Image for 8th border.png",
+  "/Image for 9th border.png",
 ];
 
 const faqs = [
   {
     question: "Do I need experience before joining?",
     answer:
-      "No. Intro sessions are designed for complete beginners. Kashan will guide your setup, form, and modifications throughout class.",
+      "No. Intro mat sessions are designed for complete beginners. Kashan will guide your setup, form, and modifications throughout class.",
   },
   {
     question: "What should I bring to class?",
     answer:
-      "Wear comfortable fitted clothing, bring water, and use grip socks if you are doing reformer-style or equipment-based work.",
+      "Wear comfortable fitted clothing and bring water. Mats will be used for sessions, and you can bring your own mat if you prefer.",
   },
   {
     question: "How early should I arrive?",
@@ -161,9 +171,9 @@ const faqs = [
       "For your first class, arrive 10 minutes early so there is time to settle in, ask questions, and feel prepared.",
   },
   {
-    question: "Can I cancel or reschedule?",
+    question: "Do you offer reformer Pilates?",
     answer:
-      "Yes. The cancellation window can be adjusted to your policy, but the website is designed to make rescheduling simple.",
+      "Reformer Pilates is coming soon. The studio is starting with mat Pilates first, then reformer sessions will be introduced as the next phase.",
   },
 ];
 
@@ -175,8 +185,10 @@ const testimonials = [
 
 const smokeTests = [
   { name: "nav includes classes", pass: navItems.some((item) => item.id === "classes") },
-  { name: "hero image is embeddable", pass: HERO_IMAGE.startsWith("data:image/svg+xml") },
+  { name: "hero visual component exists", pass: typeof HeroStudioVisual === "function" },
   { name: "classes are selectable", pass: classes.length >= 4 },
+  { name: "mat pilates is first class", pass: classes[0].title.includes("Mat Pilates") },
+  { name: "reformer marked coming soon", pass: classes.some((item) => item.title.includes("Reformer") && item.level === "Coming soon") },
   { name: "offers available", pass: offers.length === 3 },
   { name: "faqs available", pass: faqs.length >= 4 },
   { name: "plans available", pass: plans.length === 3 },
@@ -295,16 +307,60 @@ function Pill({ children, active = false, onClick }) {
   );
 }
 
-function ImageFrame({ src, alt, className = "", children, imageClassName = "object-center" }) {
+function HeroStudioVisual() {
   return (
-    <div className={"relative overflow-hidden bg-[#2f2017] " + className}>
-      <img
-        src={src}
-        alt={alt}
-        className={"absolute inset-0 h-full w-full object-cover " + imageClassName}
-      />
+    <svg className="absolute inset-0 h-full w-full scale-105 object-cover" viewBox="0 0 1086 1448" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+          <stop stopColor="#d8b083" />
+          <stop offset="0.55" stopColor="#8d633f" />
+          <stop offset="1" stopColor="#351e12" />
+        </linearGradient>
+        <radialGradient id="light" cx="78%" cy="20%" r="75%">
+          <stop stopColor="#fff7e6" stopOpacity="1" />
+          <stop offset="0.4" stopColor="#e2b77f" stopOpacity="0.45" />
+          <stop offset="1" stopColor="#351e12" stopOpacity="0" />
+        </radialGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+          <feDropShadow dx="0" dy="18" stdDeviation="20" floodColor="#200f08" floodOpacity="0.35" />
+        </filter>
+      </defs>
+      <rect width="1086" height="1448" fill="url(#wall)" />
+      <rect width="1086" height="1448" fill="url(#light)" />
+      <rect x="810" y="0" width="276" height="760" fill="#faead0" opacity="0.95" />
+      <rect x="890" y="20" width="125" height="720" fill="#fff9ed" opacity="0.78" />
+      <g opacity="0.36" stroke="#cda879" strokeWidth="8">
+        <path d="M915 0v760M955 0v760M995 0v760M1035 0v760" />
+      </g>
+      <g filter="url(#shadow)">
+        <path d="M640 910c-12-220-10-425 52-640" stroke="#301c10" strokeWidth="14" fill="none" />
+        <g fill="none" stroke="#2f3d22" strokeWidth="10" strokeLinecap="round">
+          <path d="M685 330c-82 30-142 92-182 186M700 350c76 34 128 94 160 180M665 460c-90 42-160 104-212 190M720 490c90 38 150 106 200 205M650 590c-75 35-130 88-170 158M735 610c76 34 135 88 180 160" />
+        </g>
+        <circle cx="665" cy="900" r="88" fill="#776345" />
+      </g>
+      <rect x="0" y="825" width="610" height="38" fill="#b07b4f" />
+      <rect x="74" y="735" width="96" height="96" rx="45" fill="#513b2b" />
+      <path d="M0 740c80-70 145-75 230-25" stroke="#d6b585" strokeWidth="6" fill="none" opacity="0.75" />
+      <g filter="url(#shadow)">
+        <rect x="-60" y="960" width="870" height="160" rx="35" fill="#2b1c13" opacity="0.65" />
+        <rect x="250" y="900" width="500" height="88" rx="22" fill="#b78555" />
+        <rect x="320" y="850" width="360" height="75" rx="18" fill="#23150e" opacity="0.75" />
+        <rect x="-20" y="1100" width="1060" height="185" rx="45" fill="#b47b4d" />
+        <rect x="390" y="1040" width="570" height="120" rx="25" fill="#23160f" opacity="0.78" />
+        <path d="M40 1030h280M720 1000h300M510 930h430" stroke="#23160f" strokeWidth="12" opacity="0.8" />
+      </g>
+      <rect width="1086" height="1448" fill="#160f0b" opacity="0.06" />
+    </svg>
+  );
+}
+
+function HeroImageFrame({ children }) {
+  return (
+    <div className="relative h-full w-full overflow-hidden bg-[#2f2017] p-8">
+      <HeroStudioVisual />
       <div className="absolute inset-0 bg-gradient-to-b from-[#2f2017]/0 via-[#2f2017]/5 to-[#2f2017]/55" />
-      {children ? <div className="relative z-10 h-full">{children}</div> : null}
+      <div className="relative z-10 h-full">{children}</div>
     </div>
   );
 }
@@ -349,7 +405,7 @@ export default function PilatesStudioPrototype() {
             </div>
             <div>
               <p className="font-serif text-xl tracking-tight text-[#fff7ec]">{BRAND.name}</p>
-              <p className="text-[10px] uppercase tracking-[0.35em] text-[#d4a978]">Pilates Studio</p>
+              <p className="text-[10px] uppercase tracking-[0.35em] text-[#d4a978]">Mat Pilates Studio</p>
             </div>
           </button>
           <nav className="hidden items-center gap-7 text-sm text-[#ead0b1] md:flex">
@@ -406,7 +462,7 @@ export default function PilatesStudioPrototype() {
             ✦ Candlelit Pilates, calm strength, and precise form
           </div>
           <h1 className="max-w-3xl font-serif text-6xl leading-[0.95] tracking-tight text-[#fff7ec] md:text-8xl">
-            Pilates that feels calm, strong, and beautifully personal.
+            Mat Pilates that feels calm, strong, and beautifully personal.
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-[#e3c19d]">
             {BRAND.name} is a warm luxury Pilates experience inspired by golden light, soft architecture, and
@@ -441,12 +497,7 @@ export default function PilatesStudioPrototype() {
 
         <TiltCard maxTilt={12} className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-t-[9rem] rounded-b-[3rem] border border-[#f5d8b4]/20 bg-[#2c1b12] shadow-2xl shadow-black/40">
-            <ImageFrame
-              src={HERO_IMAGE}
-              alt="Warm Pilates studio with reformers and natural light"
-              className="h-full w-full p-8"
-              imageClassName="object-center scale-105"
-            >
+            <HeroImageFrame>
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -461,16 +512,16 @@ export default function PilatesStudioPrototype() {
                     <p className="font-serif text-2xl">Breathe</p>
                   </div>
                   <h2 className="font-serif text-5xl leading-tight text-[#fff7ec] drop-shadow-lg">
-                    Reformer Flow at 10:30
+                    Mat Pilates Flow at 10:30
                   </h2>
                   <p className="mt-4 max-w-sm text-[#f3d7b6] drop-shadow">
-                    Low-impact strength, elegant sequencing, and hands-on alignment.
+                    Low-impact mat strength, elegant sequencing, and guided alignment.
                   </p>
                 </div>
               </motion.div>
-            </ImageFrame>
+            </HeroImageFrame>
           </div>
-          <div className="absolute -bottom-8 -left-4 max-w-xs rounded-[2rem] border border-[#fff0dc]/30 bg-[#fff7ec]/90 p-5 shadow-xl backdrop-blur md:-left-10">
+          <div className="absolute -bottom-16 -left-4 max-w-xs rounded-[2rem] border border-[#fff0dc]/30 bg-[#fff7ec]/90 p-5 shadow-xl backdrop-blur md:-left-10">
             <div className="mb-3 flex gap-1 text-[#9b642f]">★★★★★</div>
             <p className="text-sm leading-6 text-[#5a3b28]">
               Calm, precise, and genuinely confidence-building from the first session.
@@ -526,11 +577,17 @@ export default function PilatesStudioPrototype() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <TiltCard maxTilt={10}>
             <div className="overflow-hidden rounded-t-[8rem] rounded-b-[2.5rem] border-[10px] border-[#7a4328] bg-[#7a4328] shadow-2xl shadow-[#4a2f1e]/20">
-              <div className="flex aspect-[4/5] flex-col justify-between rounded-t-[6.5rem] rounded-b-[1.8rem] bg-gradient-to-br from-[#c89660] to-[#5a341f] p-7 text-[#fff7ec]">
-                <div className="w-fit rounded-full bg-[#fff7ec]/90 px-4 py-2 text-sm text-[#4a2f1e] shadow-sm">
+              <div className="relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-t-[6.5rem] rounded-b-[1.8rem] p-7 text-[#fff7ec]">
+                <img
+                  src="/Image for 1st border.png"
+                  alt="Warm boutique Pilates studio interior"
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/70" />
+                <div className="relative z-10 w-fit rounded-full bg-[#fff7ec]/90 px-4 py-2 text-sm text-[#4a2f1e] shadow-sm">
                   About Kashan
                 </div>
-                <div>
+                <div className="relative z-10">
                   <p className="max-w-sm font-serif text-5xl leading-tight">Warm light. Soft curves. Quiet strength.</p>
                   <p className="mt-5 max-w-sm text-[#ffe7c5]">
                     A personal Pilates experience created for mindful movement, elegant form, and restorative focus.
@@ -542,11 +599,11 @@ export default function PilatesStudioPrototype() {
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#9a6d4b]">About</p>
             <h2 className="font-serif text-5xl leading-tight tracking-tight text-[#2f2017] md:text-6xl">
-              A boutique Pilates experience with a luxury spa feeling.
+              A boutique Pilates expereince with a luxury feeling.
             </h2>
             <p className="mt-6 text-lg leading-9 text-[#76543c]">
               {BRAND.name} is designed for people who want movement to feel intentional, beautiful, and deeply personal.
-              Every class blends precise Pilates technique with a calming studio-inspired environment.
+              Every class begins with precise mat Pilates technique, mindful movement, and a calming studio-inspired environment.
             </p>
             <div className="mt-9 grid gap-4 sm:grid-cols-3">
               {[
@@ -616,8 +673,14 @@ export default function PilatesStudioPrototype() {
             </div>
             <TiltCard maxTilt={7}>
               <div className="rounded-[2.5rem] border border-[#ead2b7] bg-white p-8 shadow-xl shadow-[#4a2f1e]/5 md:p-10">
-                <div className="mb-8 flex h-64 items-end rounded-t-[6rem] rounded-b-[2rem] bg-gradient-to-br from-[#6f442b] via-[#d4a978] to-[#2f2017] p-6">
-                  <div className="rounded-3xl bg-[#fff7ec]/90 p-5 shadow-sm backdrop-blur">
+                <div className="relative mb-8 flex h-64 items-end overflow-hidden rounded-t-[6rem] rounded-b-[2rem] bg-gradient-to-br from-[#6f442b] via-[#d4a978] to-[#2f2017] p-6">
+                  <img
+                    src={classImages[selectedClass.title] || classImages["Mat Pilates Flow"]}
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/10" />
+                  <div className="relative z-10 rounded-3xl bg-[#fff7ec]/90 p-5 shadow-sm backdrop-blur">
                     <p className="text-sm uppercase tracking-[0.25em] text-[#9a6d4b]">Featured class</p>
                     <h3 className="mt-2 font-serif text-4xl text-[#2f2017]">{selectedClass.title}</h3>
                   </div>
@@ -647,7 +710,7 @@ export default function PilatesStudioPrototype() {
           <SectionHeader
             eyebrow="Pricing"
             title="Simple plans, elevated rituals."
-            copy="Click a plan to bring it forward visually, then book the selected experience."
+            copy="Choose the plan that supports your rhythm, then book your next session."
             dark
           />
           <div className="grid gap-6 md:grid-cols-3">
@@ -702,15 +765,22 @@ export default function PilatesStudioPrototype() {
         <div className="mx-auto max-w-7xl">
           <SectionHeader
             eyebrow="Blogs"
-            title="Editorial content to build trust before they book."
-            copy="Hover the journal cards for a soft editorial feel. Later, each card can open a full blog article."
+            title="Journal notes for mindful movement."
+            copy="Explore movement tips, studio updates, and guidance for your Pilates practice."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {blogPosts.map((post, index) => (
               <TiltCard key={post.title} className="cursor-pointer" maxTilt={8}>
                 <div className="group overflow-hidden rounded-[2.5rem] border border-white/60 bg-[#fff7ec] text-left shadow-sm transition hover:shadow-xl hover:shadow-[#4a2f1e]/10">
-                  <div className="h-56 bg-gradient-to-br from-[#4a2f1e] via-[#b57945] to-[#f0d2ad] p-5">
-                    <div className="flex h-full items-end rounded-[2rem] border border-[#ffe2bc]/30 bg-[#fff7ec]/10 p-5 backdrop-blur-sm">
+                  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-[#4a2f1e] via-[#b57945] to-[#f0d2ad] p-5">
+                    {blogImages[index] ? (
+                      <img
+                        src={blogImages[index]}
+                        alt=""
+                        className="absolute inset-0 h-full w-full object-cover object-center"
+                      />
+                    ) : null}
+                    <div className="relative z-10 flex h-full items-end rounded-[2rem] border border-[#ffe2bc]/30 bg-[#fff7ec]/10 p-5">
                       <p className="font-serif text-5xl text-[#fff7ec]">0{index + 1}</p>
                     </div>
                   </div>
@@ -739,7 +809,7 @@ export default function PilatesStudioPrototype() {
               Questions, answered calmly.
             </h2>
             <p className="mt-5 text-base leading-8 text-[#76543c]">
-              The FAQ section works as an accordion, so the page stays clean while still answering buyer objections.
+              Find calm, simple answers before your first class.
             </p>
             <Button
               onClick={() => scrollToSection("contact")}
