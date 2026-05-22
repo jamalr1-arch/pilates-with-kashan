@@ -4,6 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === "true" ? "/pilates-with-kashan/" : "/",
+  base:
+    process.env.CUSTOM_DOMAIN === "true"
+      ? "/"
+      : process.env.GITHUB_PAGES === "true"
+        ? "/pilates-with-kashan/"
+        : "/",
   plugins: [react(), tailwindcss()],
 });
